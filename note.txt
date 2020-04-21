@@ -14,5 +14,8 @@ git commit 将暂存区的文件添加到本地库
 git checkout -- <file>  取消在工作空间的改动
 git commit -a
 git commit -m "提交信息" <file> 提交文件 不用进入vim编辑器，直接输入提交信息
-git log 查看提交记录日志
-版本回退测试记录
+git log 查看提交记录日志(最完整的详细信息)
+	多屏显示控制方式:空格向下翻页，b向上翻页，q退出
+git log --pretty=oneline 只显示一行，显示哈希值和改动信息
+git log --oneline 和上面的差不多，但是哈希值不是完整的显示更加简洁
+git reflog 在oneline的基础上显示了 head@{移动到当前版本需要多少步}
