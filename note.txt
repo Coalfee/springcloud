@@ -19,3 +19,4 @@ git log 查看提交记录日志(最完整的详细信息)
 git log --pretty=oneline 只显示一行，显示哈希值和改动信息
 git log --oneline 和上面的差不多，但是哈希值不是完整的显示更加简洁
 git reflog 在oneline的基础上显示了 head@{移动到当前版本需要多少步}
+test for version back
