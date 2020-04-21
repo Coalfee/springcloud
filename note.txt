@@ -10,4 +10,4 @@ git config -global user.email 710501363@qq.com 为系统级别设置签名
 
 git add 将文件添加进git进行管理(相当于文件处于暂存区)
 git rm --cached <file> 可以撤销已经处于暂存区的文件
-
+git commit 将暂存区的文件添加到本地库
