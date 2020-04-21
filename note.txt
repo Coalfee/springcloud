@@ -14,3 +14,4 @@ git commit 将暂存区的文件添加到本地库
 git checkout -- <file>  取消在工作空间的改动
 git commit -a
 git commit -m "提交信息" <file> 提交文件 不用进入vim编辑器，直接输入提交信息
+git log 查看提交记录日志
