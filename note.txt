@@ -50,3 +50,6 @@ git reset --hard <局部哈希索引值> ps:可以先用git reflog命令再用版本控制命令
 		2.执行merge命令 git merge <哪一个分支的修改拿到当前的分支上,就是有新修改内容的分支>
 
 
+分支合并的冲突问题:比如两个不同的分支修改了同一个位置但是修改的内容不同。那么git就无法决定合并的版本,git就会以冲突的形式体现出来
+			Automatic merge failed; fix conflicts and then commit the result.
+			这个时候就需要手动merge,手动修改冲突的部分到满意为止，然后通过git add <file> 到暂存区
