@@ -1,3 +1,5 @@
+git help <命令名> - 查看帮助文档
+
 git init 初始化一个本地仓库
 git config user.name wanghaha
 git config user.email 710501363@qq.com 为当前仓库设置签名
@@ -14,9 +16,17 @@ git commit 将暂存区的文件添加到本地库
 git checkout -- <file>  取消在工作空间的改动
 git commit -a
 git commit -m "提交信息" <file> 提交文件 不用进入vim编辑器，直接输入提交信息
+
+日志查看命令:
 git log 查看提交记录日志(最完整的详细信息)
 	多屏显示控制方式:空格向下翻页，b向上翻页，q退出
 git log --pretty=oneline 只显示一行，显示哈希值和改动信息
 git log --oneline 和上面的差不多，但是哈希值不是完整的显示更加简洁
 git reflog 在oneline的基础上显示了 head@{移动到当前版本需要多少步}
-test for version back
+
+版本控制回退命令:
+git reset --hard <局部哈希索引值> ps:可以先用git reflog命令再用版本控制命令
+    reset命令的三个参数对比:
+    	--soft:仅仅是在本地库移动HEAD指针
+	--hard:在本地库移动HEAD指针，重置暂存区和工作区
+	--mixed:在本地库移动HEAD指针，重置暂存区
