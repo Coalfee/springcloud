@@ -1,0 +1,13 @@
+git init 初始化一个本地仓库
+git config user.name wanghaha
+git config user.email 710501363@qq.com 为当前仓库设置签名
+
+git config -global user.name wanghaha
+git config -global user.email 710501363@qq.com 为系统级别设置签名
+
+当前仓库签名和系统级别签名如果两者都设置了，那么会就近选择使用当前仓库的签名，如果都没有设置
+那么git无法识别身份，操作会报错
+
+git add 将文件添加进git进行管理(相当于文件处于暂存区)
+git rm --cached <file> 可以撤销已经处于暂存区的文件
+
