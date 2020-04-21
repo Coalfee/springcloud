@@ -41,4 +41,9 @@ git reset --hard <局部哈希索引值> ps:可以先用git reflog命令再用版本控制命令
 	git diff HEAD<索引> 和某一个历史版本进行比较 
 
 
+分支的操作:
+	git branch -v 查看所有的分支
+	git branch <分支名> 创建新的分支
+	git checkout <分支名> 切换到对应的分支
+
 
