@@ -6,6 +6,10 @@ saklskaslda
 asdasdasdass
 @@@@@@@@@@@@@@@@
 *(*(*)(!&@*(&%!^%@^(*&(*)_(&^^&%$#^$&%^*&)(*
+<<<<<<< HEAD
 #!@#$%^&*()
 orange111111
 edit by master
+=======
+#!@#$%^&*() edit by slaver
+>>>>>>> slaver
