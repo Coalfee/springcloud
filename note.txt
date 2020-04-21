@@ -50,6 +50,23 @@ git reset --hard <局部哈希索引值> ps:可以先用git reflog命令再用版本控制命令
 		2.执行merge命令 git merge <哪一个分支的修改拿到当前的分支上,就是有新修改内容的分支>
 
 
-分支合并的冲突问题:比如两个不同的分支修改了同一个位置但是修改的内容不同。那么git就无法决定合并的版本,git就会以冲突的形式体现出来
+分支合并的冲突问题:比如两个不同的分支修改了同一个位置但是修改的内容不同。那么git就无法决定合并的版本,git就会以冲突的形式体现出来(此时会进入冲突模式:wanghaha@ergou MINGW64 /f/gitlearn (master|MERGING))
 			Automatic merge failed; fix conflicts and then commit the result.
 			这个时候就需要手动merge,手动修改冲突的部分到满意为止，然后通过git add <file> 到暂存区
+			1.编辑文件删除特殊符号:如下，不同分支的修改在同一个位置，产生冲突后打开文件会以如下方式提醒，删除特殊符号按需求修改后
+				<<<<<<< HEAD
+				测试数据1 edit by master
+				=======
+				测试数据2 edit by slaver
+				>>>>>>> slaver
+			2.git add <file> 这一步相当于是已经解决了冲突，将修改后的文件添加到暂存区
+			3.git commit -m "日志信息"  ps:这里不需要添加文件名，因为这里的提交一定是针对于产生冲突的文件
+
+
+
+
+本地库与远程库交互:通过https的方式需要git远程地址的完整信息，可以在git中通过别名设置https://github.com/Coalfee/remote.git 为这个地址设置一个别名通过git remote add <别名> <地址>
+		   可以通过 git remote -v查看别名和对应地址
+	1.初始化本地库
+	2.git push <别名>/<地址> <分支名>
+	
