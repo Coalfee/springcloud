@@ -8,6 +8,9 @@ git config -global user.email 710501363@qq.com 为系统级别设置签名
 当前仓库签名和系统级别签名如果两者都设置了，那么会就近选择使用当前仓库的签名，如果都没有设置
 那么git无法识别身份，操作会报错
 
-git add 将文件添加进git进行管理(相当于文件处于暂存区)
+git add 将文件添加进git进行管理(相当于文件处于暂存区) -将一个未被git管理的文件变成受git追踪的文件
 git rm --cached <file> 可以撤销已经处于暂存区的文件
 git commit 将暂存区的文件添加到本地库
+git checkout -- <file>  取消在工作空间的改动
+git commit -a
+git commit -m "提交信息" <file> 提交文件 不用进入vim编辑器，直接输入提交信息
