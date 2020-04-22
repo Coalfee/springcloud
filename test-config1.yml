@@ -11,4 +11,4 @@ spring:
 spring:
   profiles: pro
   application:
-    name: cloud-pro111
+    name: cloud-pro22222
