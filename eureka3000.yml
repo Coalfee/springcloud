@@ -1,7 +1,5 @@
 server:
   port: 3002
-spring:
-  profiles: dev
 eureka:
   server:
     enable-self-preservation: false #关闭自我保护机制
