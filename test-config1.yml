@@ -1,5 +1,14 @@
 server:
   port: 9999
 spring:
+  profiles: dev
   application:
-    name: test-cloud-test1
+    name: cloud-dev111
+
+
+---
+
+spring:
+  profiles: pro
+  application:
+    name: cloud-pro111
