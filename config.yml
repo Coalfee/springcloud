@@ -1,5 +1,5 @@
-server:8021
-
+server:
+  port: 8021
 spring:
   profiles: dev
   application:
