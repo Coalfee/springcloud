@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: eureka-server
 server:
   port: 3000
 eureka:
