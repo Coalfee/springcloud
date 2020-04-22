@@ -69,4 +69,13 @@ git reset --hard <局部哈希索引值> ps:可以先用git reflog命令再用版本控制命令
 		   可以通过 git remote -v查看别名和对应地址
 	1.初始化本地库
 	2.git push <别名>/<地址> <分支名>
-	
+
+
+克隆操作的效果: git clone <httpurl>/<别名>
+	1.完整的把远程库下载到本地
+	2.创建origin远程地址别名
+	3.初始化本地库
+
+拉取操作:git pull <远程地址> <远程分支名> (fetch + merge操作的合并)
+	git fetch <远程地址别名> <远程分支名>
+	git merge <远程地址别名>/<远程地址分支名>
