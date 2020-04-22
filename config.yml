@@ -3,6 +3,9 @@ spring:
   application:
     name: cloud-dev
 
+
+---
+
 spring:
   profiles: pro
   application:
