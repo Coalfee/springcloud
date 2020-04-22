@@ -1,5 +1,9 @@
-data:
-  env: config-eureka-dev
-  user:
-    username: eureka-client-user
-    password: 1291029102
+spring:
+  profiles: dev
+  application:
+    name: cloud-dev
+
+spring:
+  profiles: pro
+  application:
+    name: cloud-pro
