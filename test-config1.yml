@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   profiles: dev
-  	active: pro
+    active: pro
   application:
     name: cloud-dev111
 
