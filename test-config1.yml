@@ -1,13 +1,23 @@
+spring:
+  profiles:
+    active: pro
+
+---
+
 server:
-  port: 9999
+  port: 8203
+
+
 spring:
   profiles: dev
-    active: pro
   application:
     name: cloud-dev111
 
 
 ---
+
+server:
+  port: 8033
 
 spring:
   profiles: pro
