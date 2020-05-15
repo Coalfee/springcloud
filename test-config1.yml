@@ -1,25 +1,16 @@
 spring:
   profiles:
-    active: pro
+    active: dev
 
 ---
+spring:
+  profiles: prod
+  application:
+    name: config-eureka-client
 
-server:
-  port: 8203
-
-
+---
 spring:
   profiles: dev
   application:
-    name: cloud-dev111
+    name: config-eureka-client
 
-
----
-
-server:
-  port: 8033
-
-spring:
-  profiles: pro
-  application:
-    name: cloud-pro22222
